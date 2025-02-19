@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css"><!-- adding ccs file to html-->
+  <script src="script.js"></script><!-- adding javascript file to html-->
+  <!--adding link for logos...-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+ 
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+
+</head>
+<body>
+    <header>
+        <!--listing out home, about, projects & contact-->
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">My Projects</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+                <li class="resume-dropdown">
+                    <a href="#">Resume ▾</a>
+                    <ul class="dropdown">
+                      <li><a href="resume.pdf" target="_blank">View Resume</a></li>
+                      <li><a href="resume.pdf" download="Adarsh_Pandey_Resume.pdf">Download Resume</a></li>
+                    </ul>
+                  </li>
+            </ul>
+        </nav>
+        
+        <section id="home" class="home">
+            <div class="profile">
+                <img src="profile.png" class="profile-pic">
+            </div>
+            <div class="introduction">
+                <h2>Welcome!</h2>
+                <h3>I'm 'full-stack developer'</h3>
+                <p>full-stack Developer | Development enthusiast | Eager to Learn and Grow | Computer Science Undergrad</p>
+            </div>
+        </section>
+
+<!-- the section under is about the candidate whose protfolio is this....-->
+        
+        
+        <section id="about" class="about dark-bg">
+            <div class="me">
+                <h2>Who I am?</h2>
+                <p>"Hello there!, I am full-stack developer. I am from the City XYZ and currently I'm doing full-stack development with html/css, javascript, for frontend & for backend I use Python programming language for there easy to understandable language."</p>
+            </div>
+            <div class="education">
+                <h2>Education & Achievement</h2>
+                <p>I have done Bachelor's of Engineering & Technology(in Computer Science) from AKTU university of Lucknow. And My Schooling has been completed from New R.S.J. Public School of Prayagraj. I qualified my 10th & 12th with 79% in 10th and 80% in 12th from CBSE board.
+                </p>
+            </div>
+            <div class="skills">
+                <h2>Skills & Technologies</h2>
+                <p>My core skills are in development through html/css, javascript & python programming language. And I have also good knowledge of database management</p>
+            </div>
+            <div class="my_job">
+                <h2>What I am doing?</h2>
+                <p>Currently, I'm doing internship with Unified Mentor. This is a well known platform form different domains of internship Like full-stack development, python developer, data analyst, etc.
+                </p>
+            </div>
+            <div class="doing">
+                <h2>Focusing on?</h2>
+                <p>I'm now doing my job well. But I still have focus on keep learning and moving forward to build AI models, chatbot, that are muvh more useful in nowadays and implement it in my project developments.
+                </p>
+            </div>
+        </section>
+        <!-- Project section of portfolio...-->
+         <!--ALERT! ALERT! ALERT!-->
+        
+         <section id="projects">
+            <h2 class="section-title">My Projects</h2>
+          
+            <div class="projects-container">
+              <!-- Project 1 -->
+              <div class="project-card">
+                <img src="project1.jpg" alt="Project 1">
+                <h3>Project Title 1</h3>
+                <p>A brief description of the project goes here. It highlights key features and tech used.</p>
+                <a href="#project1" class="project-link">View Project</a>
+              </div>
+          
+              <!-- Project 2 -->
+              <div class="project-card">
+                <img src="project2.jpg" alt="Project 2">
+                <h3>Project Title 2</h3>
+                <p>This is another project description. Add some details about what makes it special.</p>
+                <a href="#project2" class="project-link">View Project</a>
+              </div>
+          
+              <!-- Project 3 -->
+              <div class="project-card">
+                <img src="project3.jpg" alt="Project 3">
+                <h3>Project Title 3</h3>
+                <p>Describe the project's purpose and technology used in a concise way.</p>
+                <a href="#project3" class="project-link">View Project</a>
+              </div>
+            </div>
+          </section>
+          <!-- from there something something is understandable...-->
+          
+          
+          <SECTION id="project1" class="project-details dark-bg">
+            <h1>Project 1: Project S.H.R.E.[Smart Hub of Real Estate]</h1>
+            <H3>Technology Stack: Python(Django), HTML/CSS & MySql.</H3>
+            <p>The Inventory Management System is a desktop application built using .NET C# and Microsoft SQL Server to help businesses efficiently manage their stock, suppliers, and sales. It provides a user-friendly interface for tracking inventory levels, processing sales and purchases, and generating reports.
+              <br><br>
+              Key Features:
+              <br>
+              Product Management: Add, update, delete, and categorize products.
+              Stock Tracking: Monitor stock levels with low-stock alerts.
+              Sales & Purchases: Record transactions and manage order history.
+              Supplier & Customer Management: Maintain detailed records for easy tracking.
+              Reporting & Analytics: Generate sales, stock, and purchase reports.
+              User Authentication: Role-based access control for admins and staff.
+              <br><br>
+              Use Case:
+              <br>
+              Ideal for retail stores, warehouses, and small businesses that need a reliable system to automate inventory processes and minimize errors.
+              
+              Let me know if you need further refinements! 🚀
+            </p>
+          </SECTION>
+          
+          
+          <SECTION id="project2" class="project-details dark-bg">
+            <h1>Project 2: Inventory Management System</h1>
+            <H3>Technology Stack: Language: C# (.NET Framework), UI Framework: WinForms / WPF, Database: Microsoft SQL Server, ORM / Connectivity: Entity Framework / ADO.NET, Reporting: Crystal Reports</H3>
+            <p>The Inventory Management System is a desktop application designed to streamline inventory tracking, stock management, and order processing. This system provides businesses with a centralized solution to manage products, suppliers, sales, and purchases efficiently.
+              <br><br>
+              Key Features:
+              <br>
+              Product Management: Add, edit, delete, and categorize products with real-time stock updates.
+              Supplier & Customer Management: Maintain supplier and customer records for easy order tracking.
+              Stock Tracking: Monitor available stock levels and receive alerts for low inventory.
+              Sales & Purchase Management: Keep track of incoming and outgoing goods with detailed logs.
+              Reporting & Analytics: Generate sales reports, stock reports, and purchase summaries.
+              User Authentication & Role Management: Secure access for admins, managers, and staff with role-based permissions.
+              <br><br>
+              Use Case:
+              <br>
+              This system is ideal for retail stores, warehouses, and businesses that require efficient inventory control to reduce losses and improve productivity.
+              Would you like me to refine any section or add a GitHub repository structure for your project? 🚀</p>
+          </SECTION>
+          
+          
+          <SECTION id="project3" class="project-details dark-bg">
+            <h1>Project 3: AI Chatbot</h1>
+            <H3>Technology Stack: Python Programming language</H3>
+            <p>This chatbot is developed to solve the problems that our application user
+               in any case of having trouble in using application. That is basically for making user
+               to help them for using application well through finding there FAQs or 
+              if another problem exixts they'll find there solution using this chatbot. 🚀</p>
+          </SECTION>
+        <!--from now 3/4th part of project completed we setup home page, about page, project page, amke a resume viewer and resume download setion...-->
+        
+        
+        <!--this below section is gone used to design up the contact section of personal portfolio...-->
+        <secion id="contact" class="contact-container">
+          <div>
+          <h2>Contact Me:</h2>
+          <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <input type="text" id="subject" placeholder="Subject" required>
+            <textarea id="message" rows="4" coloumns="50" placeholder="Your Message" required></textarea><br>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+        <div>
+          <span>
+          <img src="profile.png" width="300"></span>
+        </div>
+        </secion>
+
+
+    </header>
+   
+    <footer>
+      <p>&copy; 2025 Adarsh Pandey. All rights reserved.</p>
+      <p>
+        <a href="https://www.linkedin.com/" target="_blank">
+          <i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+        |
+        <a href="https://github.com/" target="_blank">
+          <i class="fa-brands fa-github"></i> GitHub</a>
+      </p>
+  </footer>
+  
+</body>
+</html>
