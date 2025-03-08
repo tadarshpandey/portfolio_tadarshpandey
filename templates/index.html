@@ -4,8 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
-  <link rel="stylesheet" href="style.css"><!-- adding ccs file to html-->
-  <script src="script.js"></script><!-- adding javascript file to html-->
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}"> <!--adding ccs file to html-->
+  <!--<script defer src="{{url_for('static', filename='script.js')}}"></script>-->
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+
+  <!-- <script src="script.js"></script>adding javascript file to html-->
   <!--adding link for logos...-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
  
@@ -37,7 +42,7 @@
         
         <section id="home" class="home">
             <div class="profile">
-                <img src="images/profile.png" class="profile-pic">
+                <img src="static/images/profile.png" class="profile-pic">
             </div>
             <div class="introduction">
                 <h2>Welcome!</h2>
@@ -83,7 +88,7 @@
             <div class="projects-container">
               <!-- Project 1 -->
               <div class="project-card">
-                <img src="images/project1.png" alt="Project 1">
+                <img src="static/images/project1.png" alt="Project 1">
                 <h3>Project Title 1</h3>
                 <p>A brief description of the project goes here. It highlights key features and tech used.</p>
                 <a href="#project1" class="project-link">View Project</a>
@@ -91,7 +96,7 @@
           
               <!-- Project 2 -->
               <div class="project-card">
-                <img src="images/project2.png" alt="Project 2">
+                <img src="static/images/project2.png" alt="Project 2">
                 <h3>Project Title 2</h3>
                 <p>This is another project description. Add some details about what makes it special.</p>
                 <a href="#project2" class="project-link">View Project</a>
@@ -99,7 +104,7 @@
           
               <!-- Project 3 -->
               <div class="project-card">
-                <img src="images/project3.png" alt="Project 3">
+                <img src="static/images/project3.png" alt="Project 3">
                 <h3>Project Title 3</h3>
                 <p>Describe the project's purpose and technology used in a concise way.</p>
                 <a href="#project3" class="project-link">View Project</a>
@@ -168,17 +173,18 @@
         <secion id="contact" class="contact-container">
           <div>
           <h2>Contact Me:</h2>
-          <form id="contactForm">
-            <input type="text" id="name" placeholder="Your Name" required>
-            <input type="email" id="email" placeholder="Your Email" required>
-            <input type="text" id="subject" placeholder="Subject" required>
-            <textarea id="message" rows="4" coloumns="50" placeholder="Your Message" required></textarea><br>
+          <form id="contactForm" action="/contact" method="post">
+            <input type="text" name="name" id="name" placeholder="Your Name" required>
+            <input type="email" name="email" id="email" placeholder="Your Email" required>
+            <input type="text" name="subject" id="subject" placeholder="Subject" required>
+            <textarea name="message" id="message" rows="4" coloumns="50" placeholder="Your Message" required></textarea><br>
             <button type="submit">Send Message</button>
           </form>
+          <p id="responseMessage"></p>
         </div>
         <div>
           <span>
-          <img src="images/profile.png" width="300"></span>
+          <img src="static/images/profile.png" width="300"></span>
         </div>
         </secion>
 
